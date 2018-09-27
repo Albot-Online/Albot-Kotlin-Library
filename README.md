@@ -4,12 +4,10 @@ A simple library for communicating with the [Albot.Online](https://Albot.Online)
 This is great for getting you up and running fast, allowing you to focus more on the AI logic.
 <br><br>
 ## Getting Started
-This library is available as jars (library + javadoc). Download them from the [target folder of this repository](https://github.com/Albot-Online/Albot-Java-Library/tree/master/target).<br>
-When the jars are downloaded, import them to your project. Preferably by using a sophisticated IDE such as IntelliJ: [How to add Jar to Dependencies in IntelliJ.](https://www.jetbrains.com/help/idea/library.html#add-library-to-module-dependencies)
+TODO
 
 ## Example
-Following is a short example of the Java Library being put to use on the [Snake](https://www.albot.online/snake/) game. 
-For exact information of how to use the library see the [documentation Wiki](https://github.com/Albot-Online/Albot-Java-Library/wiki).
+TODO
 
 ```java
 TODO
