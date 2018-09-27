@@ -15,6 +15,7 @@ repositories {
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+        implementation 'com.github.Albot-Online:Albot-Kotlin-Library:9140031618'
 
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.2.0")
     testRuntime("org.junit.jupiter:junit-jupiter-engine:5.2.0")
