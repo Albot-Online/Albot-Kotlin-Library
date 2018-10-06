@@ -7,17 +7,26 @@ version '0.1-SNAPSHOT'
 description 'Kotlin connector for Albot.online'
 
 repositories {
+    jcenter()
     mavenCentral()
+    maven { url "https://dl.bintray.com/kotlin/kotlinx" }
+    maven { url "https://dl.bintray.com/kotlin/ktor" }
     maven {
         url "https://jitpack.io"
     }
 }
 
 dependencies {
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
-        implementation 'com.github.Albot-Online:Albot-Kotlin-Library:9140031618'
+    compile 'org.jetbrains.kotlin:kotlin-stdlib-jdk8'
+    compile("org.jetbrains.kotlinx:kotlinx-coroutines-core:0.30.1") {
+        exclude group: "org.jetbrains.kotlinx", module: "atomicfu-common"
+    }
+
+    compile 'io.github.microutils:kotlin-logging:1.6.10'
+    implementation 'ch.qos.logback:logback-core:1.2.3'
 
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.2.0")
+    testImplementation("io.mockk:mockk:1.8.9")
     testRuntime("org.junit.jupiter:junit-jupiter-engine:5.2.0")
 }
 
